@@ -1,6 +1,6 @@
 # Строки как базовый тип
 name_str = "Bobby"
-last_name_str = "Kotik"
+last_name_str = 'Kotik'
 third_name = 'The "Third"'
 
 # Конкатенация
