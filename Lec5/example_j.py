@@ -3,13 +3,13 @@
 #     body
 # Простейший цикл for
 
-# i = 1
-# while i < 10:
-#     print(i)
-#     i += 1
+i = 1
+while i < 10:
+    print("While loop:", i)
+    i += 1
 
-# for j in range(1, 10, 1): #[start, stop), step]
-#     print("Value:", j)
+for j in range(1, 10, 1): #[start, stop), step]
+    print("For Loop:", j)
 
 # range(start, stop, step)
 # stop - это краевой параметр (т.е. итерации идут ДО НЕГО, не включая его самого)
@@ -27,12 +27,12 @@ for i in range(stopper): # range(start=0, stop[, step=1)
 # При итерировании в сторону уменьшения ОБЯЗАТЕЛЬНО
 # * start > stop
 # * step < 0
-for j in range(0, -10, -2): # start=0, stop[-10, step = 1
+for j in range(0, -10, -2): # start=0, stop[-10, step = -2
     print("Negative iterations:", j)
 
-# Важное ограничение - start/stop/step - всегда int
+# # Важное ограничение - start/stop/step - всегда int
 
-# break/continue
+# # break/continue
 for i in range(1, 13, 1):
     if i > 11 :
         print("break!")
