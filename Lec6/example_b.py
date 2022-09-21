@@ -1,5 +1,5 @@
 # Множества. Инициализация
-numeric_set = set([10,10, 10, 20, 20, 20, 30, 40, "Vasya", None, 22.5, "Vasya"])
+numeric_set = set([True, 10,10, 10, 20, False, 20, 20, 30, 40, "Vasya", None, 22.5, "Vasya"])
 #numeric_set = {10,10, 10, 20, 20, 20, 30, 40, "Vasya", None, 22.5}
 
 

@@ -8,7 +8,7 @@ print("Intersection result:", c_set)
 
 
 # Объединение - объединить элементы множеств в одно множество
-d_set = a_set.union(b_set)
+d_set = a_set.union(b_set) # {1,2,3,4,5,6} len(a) + len(b) - len(union(a,b))
 print("Union:", d_set)
 
 

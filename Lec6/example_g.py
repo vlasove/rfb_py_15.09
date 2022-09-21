@@ -1,4 +1,4 @@
-# Решение задачи S
+# Решение задачи A
 
 from_home_to_park = set()
 from_park_to_home = set()
