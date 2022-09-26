@@ -60,7 +60,7 @@
 * -
 
 
-### День 5
+### День 6
 * *Ссылка* : https://contest.yandex.ru/contest/40554/problems/
 #### Обязательные задачи:
 * H, I, J
