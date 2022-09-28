@@ -1,5 +1,5 @@
 # Методы строк
-msg = "#######heLLo World 15316######"
+msg = "###########heLLo World 15316############"
 # print(dir(msg))
 
 # Измненение регистра строки
@@ -12,13 +12,12 @@ print(".lower():", lower_msg)
 capitalize_msg = msg.capitalize()
 print(".capitalize():", capitalize_msg)
 
-
 # Узнать, на каком индексе стоит символ (первое вхождение)
 if "L" in msg:
     print("index():", msg.index("L"))
 
 # Узнать, сколько раз встрчечается та или иная подстрока
-print(".count():", msg.count("LL"))
+print(".count():", msg.count("L"))
 
 # strip()
 print(".rstrip():", msg.rstrip("#"))
