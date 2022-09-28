@@ -11,16 +11,16 @@ print("List a:", a_int_list)
 print("List b:", b_int_list)
 
 
-# Множество
-a_set = set([1,2,3,4]) # здесь также в переменной хранится ссылка!
-b_set = a_set #.copy()
-# a_set = b"xf000xf"
-# b_set = b"xf000xf"
+# # Множество
+# a_set = set([1,2,3,4]) # здесь также в переменной хранится ссылка!
+# b_set = a_set #.copy()
+# # a_set = b"xf000xf"
+# # b_set = b"xf000xf"
 
-b_set.add(100500)
+# b_set.add(100500)
 
-print("Set a:", a_set)
-print("Set b:", b_set)
+# print("Set a:", a_set)
+# print("Set b:", b_set)
 
 # Строки - тоже ссылки, но только с доступом на чтение!
 a_str = "Hello world!"
