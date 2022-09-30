@@ -1,6 +1,6 @@
 # Методы списков
 numerics = [10, 20, 30, 40, 30, 30]
-# print(dir(numerics))
+print(dir(numerics))
 
 # 1) Списки - ссылочный тип!
 b = numerics[:] #numerics.copy()
