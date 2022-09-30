@@ -6,7 +6,7 @@
 # 3.[elem if expression else elem+1 for elem in iter]
 
 # 1.[elem for elem in iter]
-numerics = [i for i in range(100)]
+numerics = [i  for i in range(100)]
 print("Numerics:", numerics)
 
 zeros = [0 for _ in range(100)]
