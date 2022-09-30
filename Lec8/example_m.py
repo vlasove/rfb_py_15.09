@@ -2,7 +2,7 @@
 name = "Alice \n\n\t" # То что вводит в форму/в консоль/в файл
 target_name = "alice" # то что лежит в базе
 
-if target_name == name.strip().lower(): # "alice" ==? "alice"
+if target_name == name.lower().strip(): # "alice \n\n\t" ==? "alice"
     print('Same names')
 else:
     print(

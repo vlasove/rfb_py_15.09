@@ -2,9 +2,10 @@
 
 # Через метод .pop()
 elem = None
-numerics = [ 10, 20, 30, 40, 50, 100, 50]
-if len(numerics) != 3:
+numerics = [ 10, 20, 30, 40, 50, 100, 999, 50, 50]
+if len(numerics) != 0:
     elem = numerics.pop(2) # Удаляет последний по умолчанию, если передан индекс- удалит по индексу
+
 print("Elem deleted:", elem)
 print("Numerics:", numerics)
 
