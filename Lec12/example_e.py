@@ -28,6 +28,7 @@ for val in words.values():
 for key, value in words.items():
     print("Key:", key, "Value:", value)
 
+
 for pair in words.items():
     print("Pair:", pair)
     print("Key:", pair[0], "Value:", pair[1])

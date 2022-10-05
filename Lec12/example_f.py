@@ -1,6 +1,7 @@
 # Методы словарей
 words = {"one" : "один" , "two" : "два", "three" : "три", "four" : "четыре"}
-# print(dir(words))
+print(dir(words))
+
 
 my_personal_key = "one"
 
@@ -12,8 +13,10 @@ else:
 
 
 # Метод .get()
-value = words.get(my_personal_key)
+value = words.get("one")
+value2 = words["one"]
 print(".get():", value)
+print("dict[key]:", value2)
 
 # Метод .get() с значением по умолчанию
 birthdays = {"jan" : 0, "feb" : 5, "mar" : 3}
@@ -31,7 +34,7 @@ print("After setdefault():", birthdays)
 # из итерируемой коллекции ключей [keys] (значения у всех одинаковые value)
 new_dict = {}
 keys = ["a", "b", "c", "d"]
-new_dict = new_dict.fromkeys(keys, 0)
+new_dict = new_dict.fromkeys(keys, False)
 print("After .fromkeys():", new_dict)
 
 # Удаление пар из словаря
