@@ -8,6 +8,10 @@ for elem in list_numerics_str:
 
 print(numerics)
 
+numerics = []
+for elem in input().strip().split():
+    numerics.append(int(elem)) # [10, 20, 30, 40, ...]
+
 
 numerics = [int(elem) for elem in input().strip().split()] # ["10", "20", "30", "40", ...]
 print(numerics) # [10, 20, 30, 40, ..]
