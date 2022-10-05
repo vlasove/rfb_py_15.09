@@ -4,6 +4,7 @@ num_tuple = (10, 20, 30, 40, 50)
 print("0-th:", num_tuple[0])
 print("Last:", num_tuple[-1])
 
+
 # Срезы
 print(num_tuple[::-1])
 print(num_tuple[2:])
@@ -30,9 +31,13 @@ for i in range(len(num_tuple)):
 for elem in num_tuple:
     print("Elem:", elem)
 
-
+# Множественное присваивание
 a ,b, c, d = (1, 2, 3, 4)
 print(a , b, c, d)
+
+# Синтаксический сахар
+a, b, c = 10, 20, 30
+print(a,b,c)
 
 # # Распаковка кортежа (tuple unpack)
 x, _, z = 1, "Bob", True
