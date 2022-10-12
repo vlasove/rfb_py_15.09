@@ -5,6 +5,10 @@ def add(a, b):
 
 add(1, 20) # С необходимо-позициональными аргументами (Required Positional Arguments)
 add(20, 1)
-add(a=10, b=50)
-add(b=50, a=10)
-add(a=-10, b=-25.5)
+# add(a=10, b=50)
+# add(b=50, a=10)
+# add(a=-10, b=-25.5)
+
+
+#add(1,2,3)
+#add(1)

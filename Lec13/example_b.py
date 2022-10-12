@@ -9,3 +9,5 @@ hello()
 # Что такое функция с точки зрения интерпретатора? Это объект
 print(type(hello))
 print(hello) # hello и hello()
+
+hello # Функциональный объект

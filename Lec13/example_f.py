@@ -3,6 +3,9 @@
 подсчет факториала n! = n * (n-1) * (n-2) * ... * 1
 """
 
+'''
+Тоже docstring
+'''
 
 def factorial(n):
     res = 1
@@ -13,6 +16,6 @@ def factorial(n):
         res *= i  
     return res
 
-for i in range(1, 11):
+for i in range(-3, 11):
     res = factorial(i)
     print(f"{i}! is equal to {res}")
