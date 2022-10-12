@@ -2,6 +2,10 @@
 # Про каждого друга известно "Имя Месяц" (где имя - имя друга, месяц - это месяц когда он родился)
 # Задача - сохранить друзей удобным для обработки образом
 
+# birthdays = {}
+# months = ["янв" , "фев", "мар"]
+# birthdays = birthdays.fromkeys(months, [])
+# print(birthdays)
 # С прединициализированным словарем
 birthdays = {
     "янв" : [],
@@ -18,17 +22,26 @@ birthdays = {
     "дек" : [],
 }
 
-n = int(input().strip()) # Количество друзей для добавления в книгу
+# 1. Наполнить словарь именами
+# 1.1 Организация ввода
+n = int(input().strip()) # Количество друзей, инфу о которых ...
 for _ in range(n):
-    info = input().strip().split() # "Вася май" -> ["Вася", "май"]
-    name = info[0]
-    month = info[1]
-
+    name, _, month = input().strip().split() # ["Витя", "12", "дек"]
+    # Добавить name в список в словаре month
     birthdays[month].append(name)
-
-m = int(input().strip()) # Количество запрос к книге
+    
+# 2. Организация вывода
+m = int(input().strip()) # Количество запросов к записной книжке
 for _ in range(m):
-    new_month = input().strip()
-    print(" ".join(sorted(birthdays[new_month])))
+    month = input().strip() # Название месяца, по которому идет запрос
+    # Используя month - вывести на консоль В ОТСОРТИРОВАННОМ ПОРЯДКЕ 
+    # имена, хранимые по ключу month
+    names =  birthdays[month]
+    print(" ".join(sorted(names)))
 
-print("Total book:", birthdays)
+
+
+
+
+
+
