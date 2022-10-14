@@ -23,7 +23,7 @@ def main():
     print("value lambda:", variable_with_lambda)
     print("lambda type is:", type(variable_with_lambda))
     for i in range(1,5):
-        print(f"lambda({i}, {i+1}) is {variable_with_lambda(i, i+1)}")
+        print(variable_with_lambda(i, i + 1))
 
     
 
