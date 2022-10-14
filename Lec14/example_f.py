@@ -9,9 +9,13 @@
 """
 
 
-def add(a :int, b :int) -> int:
+def add(a :int = 10, b :int = 10) ->int:
     """
-    description.........
+    add - арифметическое сложение аргументов, где
+    a - int
+    b - int
+    result:
+        a + b
     """
     return a + b
 
@@ -19,10 +23,12 @@ def main() -> None:
     """
     entry point
     """
-    print(add(2,3))
+    print(add())
+    print(add(2, 3))
+    print(add(12.5, 13.99))
     print(add("a", "b"))
-    print(add([10,20,30], [40]))
-    print(add((2,3), (4,5)))
-    print(add(10.5, 10 ** 0.5))
+    print(add([10,20], [0] * 10))
+    print(add((1,) * 10, (2,3,4,5)))
+    print(add(2, 12.5))
 
 main()

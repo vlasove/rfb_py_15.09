@@ -6,12 +6,13 @@
 *temp - т.е. тут важно * в самом начале
 *var  -
 """
+print()
 
-def add(x_arg:int, y_arg:int, *args :int):
+def add(x_arg :float, y_arg :float, *args :int):
     """
     args -> tuple(obj1,obj2,obj3, ....)
     """
-    print(f"X:{x_arg}, Y:{y_arg}")
+    print(f"X:{x_arg}; Y:{y_arg}")
     print("Tuple?:", type(args))
     print("Values?:", args, "And len:", len(args))
 

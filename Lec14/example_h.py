@@ -7,7 +7,7 @@
 **_
 """
 
-def build_info(**kwargs) -> None:
+def build_info(**kwargs):
     """
     description
     """
@@ -15,7 +15,11 @@ def build_info(**kwargs) -> None:
     print("Values?:", kwargs)
 
 
-def main() -> None:
+def mutant(a,b, *args, **kwargs):
+    pass
+
+
+def main():
     """
     entry point
     """
