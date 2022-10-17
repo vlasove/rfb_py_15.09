@@ -8,6 +8,14 @@ example_b:
 # 1. Способ с разделяющей областью пространств имен
 import example_a as ex
 
+# import math
+# import sys
+# import os
+# import datetime
+# import time
+# import json
+
+
 MAX_ATTEMPTS = 12
 add = lambda x,y : x + y
 
@@ -16,6 +24,9 @@ print("Add here:", add(2,3))
 
 print(ex.MAX_ATTEMPTS)
 print(ex.add(10, 12))
+
+# print(math.pi)
+# print(math.sqrt(12))
 
 
 # import example_a as ex # импортирование с РАЗДЕЛЯЮЩИЕЙ ОБЛАСТЬЮ
