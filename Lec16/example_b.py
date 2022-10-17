@@ -22,7 +22,6 @@ def main():
     anon_add = lambda first_arg, second_arg: first_arg ** 2 + second_arg ** 2
     anon_res1, anon_res2 = anon_add(1,2), anon_add(2,3)
     print("AnonRes1 + AnonRes2:", anon_res1 + anon_res2)
-
     print(type(anon_add))
     print(anon_add)
 

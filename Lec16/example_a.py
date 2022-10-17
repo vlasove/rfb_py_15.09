@@ -3,19 +3,19 @@
 где зарезервированы команды необходимые для ВЫЗОВА функции
 """
 
-def add(first_arg:int, second_arg:int) ->int:
+def add(first_arg:int, second_arg:int):
     """
     description
     """
     return first_arg** 2 + second_arg**2
 
-def sub(first_arg:int, second_arg:int) ->int:
+def sub(first_arg:int, second_arg:int):
     """
     description
     """
     return first_arg - second_arg
 
-def trivial_calc(first_arg:int, second_arg:int, func) -> int:
+def trivial_calc(first_arg:int, second_arg:int, func):
     """
     description
     """
@@ -32,13 +32,14 @@ def choose_operation(sign:str):
     else:
         return add
 
-def main() -> None:
+def main():
     """
     description
     """
     res = add(1, 2) # В переменной res - лежит РЕЗУЛЬТАТ ВЫЗОВА ФУНКЦИИ add с параметрами
     print('add(1,2):', res)
-    func_obj = add # В переменной func_obj - ледит ССЫЛКА НА команды, необходимые для ВЫЗОВА функции
+
+    func_obj = add # В переменной func_obj - лежит ССЫЛКА НА команды, необходимые для ВЫЗОВА функции
     print("Func obj:", func_obj)
     print("func_obj(2,3) ~ add(2,3) :", func_obj(2,3))
     
