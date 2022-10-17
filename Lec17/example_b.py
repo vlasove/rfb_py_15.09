@@ -4,17 +4,18 @@ example_b:
     модуля example_a
 """
 
+
 # 1. Способ с разделяющей областью пространств имен
 import example_a as ex
 
 MAX_ATTEMPTS = 12
 add = lambda x,y : x + y
 
-print(ex.MAX_ATTEMPTS)
-print(ex.add(0, 1))
-
 print("Max attempts here:", MAX_ATTEMPTS)
 print("Add here:", add(2,3))
+
+print(ex.MAX_ATTEMPTS)
+print(ex.add(10, 12))
 
 
 # import example_a as ex # импортирование с РАЗДЕЛЯЮЩИЕЙ ОБЛАСТЬЮ

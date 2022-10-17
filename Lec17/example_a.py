@@ -14,7 +14,7 @@ def add(x_arg:int, y_arg:int):
     return x_arg ** 3 + y_arg ** 4
 
 
-MAX_ATTEMPTS = 10
+MAX_ATTEMPTS = 11
 
 # 2. Как сделать так, чтобы
 # данный фрагмент кода выполнялся только
