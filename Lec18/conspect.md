@@ -6,6 +6,7 @@
     1. Проверить, что `pip` установлен : `pip --version`
     2. Для установки `pip install <package_name>`
     3. Для удаления `pip uninstall <package_name>`
+    4. Для проверки всех установленных пакетов в ОС : `pip freeze`
 
 ### 0. Настройка pip через proxy
 

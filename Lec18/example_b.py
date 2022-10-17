@@ -1,8 +1,23 @@
-"""Модуль содержащий набор простейших арифметических функций, содержащий как их
-реализацию, так и использование для вычисления нетривиального выражения."""
+"""Это очень важная строка документации.
+
+Модуль содержащий набор простейших арифметических функций, содержащий
+как их реализацию, так и использование для вычисления нетривиального
+выражения.
+"""
 
 
-def add(first_arg: int, second_arg: int) -> int:
+
+# import math
+# import os
+# import sys
+
+# from flask import Flask
+# from pandas import DataFrame
+
+# import example_a
+
+
+def add(x_arg: int, y_arg: int) ->int:
     """
     ОПИСАНИЕ:
         Арифметическое сложение аргументов
@@ -10,12 +25,12 @@ def add(first_arg: int, second_arg: int) -> int:
         x_arg ...
         y_arg ...
     РЕЗУЛЬТАТ:
-        ....
+        ...
     """
-    return first_arg + second_arg
+    return x_arg + y_arg
 
 
-def sub(first_arg: int, second_arg: int) -> int:
+def sub(x_arg, y_arg):
     """
     ОПИСАНИЕ:
         Арифметическое вычитание аргументов
@@ -23,12 +38,12 @@ def sub(first_arg: int, second_arg: int) -> int:
         x_arg ...
         y_arg ...
     РЕЗУЛЬТАТ:
-        ....
+        ...
     """
-    return first_arg - second_arg
+    return x_arg - y_arg
 
 
-def mult(first_arg: int, second_arg: int) -> int:
+def mult(x_arg, y_arg):
     """
     ОПИСАНИЕ:
         Арифметическое умножение аргументов
@@ -36,12 +51,12 @@ def mult(first_arg: int, second_arg: int) -> int:
         x_arg ...
         y_arg ...
     РЕЗУЛЬТАТ:
-        ....
+        ...
     """
-    return first_arg * second_arg
+    return x_arg * y_arg
 
 
-def div(first_arg: int, second_arg: int) -> int:
+def div(x_arg, y_arg):
     """
     ОПИСАНИЕ:
         Арифметическое целочисленное деление аргументов
@@ -49,24 +64,25 @@ def div(first_arg: int, second_arg: int) -> int:
         x_arg ...
         y_arg ...
     РЕЗУЛЬТАТ:
-        ....
+        ...
     """
-    return first_arg // second_arg
+    return x_arg // y_arg
 
 
-def main() -> None:
+def main():
     """Основная точка входа в приложение."""
-    num_a, num_b = int(input().strip()), int(input().strip())
+    first_arg, second_arg = int(input().strip()), int(input().strip())
     result = (
-        add(num_a, num_b)
-        + add(num_b, num_a)
-        + sub(add(num_a, num_a), mult(num_b, num_b))
-        - div(num_b, num_a) ** 2
-        + add(num_a, num_b)
-        + add(num_b, num_a)
-        + sub(add(num_a, num_a), mult(num_b, num_b))
-        - div(num_b, num_a) ** 2
+        add(first_arg, second_arg)
+        + add(second_arg, first_arg)
+        + sub(add(first_arg, first_arg), mult(second_arg, second_arg))
+        - div(second_arg, first_arg) ** 2
+        + add(first_arg, second_arg)
+        + add(second_arg, first_arg)
+        + sub(add(first_arg, first_arg), mult(second_arg, second_arg))
+        - div(second_arg, first_arg) ** 2
     )
+    
     print(result)
 
 
