@@ -8,4 +8,4 @@ with open(file="input.txt", mode="r") as fh:
     print(fh.readable())
 
 print(fh)
-# print(fh.readable())
+print(fh.readable())

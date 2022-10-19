@@ -1,0 +1,17 @@
+{
+    "first": {
+        "name": "Alex",
+        "last_name": "Smirnov",
+        "link": "https://vk.com/accounts/?user=14213413.php"
+    },
+    "second": [
+        10,
+        20,
+        30,
+        false,
+        null,
+        {
+            "a": "a"
+        }
+    ]
+}

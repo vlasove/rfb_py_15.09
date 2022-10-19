@@ -8,9 +8,9 @@ print('From json:', json_data)
 print(type(json_data))
 
 DATA = {
-    "name" : "Bob",
-    "last_name" : "Petrov",
-    "link" : "https://facebook.com/accounts/?user=14213413"
+    "name" : "Alex",
+    "last_name" : "Smirnov",
+    "link" : "https://vk.com/accounts/?user=14213413.php"
 }
 
 GENERAL_DATA = {
@@ -19,5 +19,5 @@ GENERAL_DATA = {
 }
 
 
-with open("data2.json", "w") as fh:
+with open("data3.json", "w") as fh:
     json.dump(obj=GENERAL_DATA, fp=fh, indent=4) # "запись" / сериализация

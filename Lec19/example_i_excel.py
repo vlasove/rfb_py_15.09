@@ -2,13 +2,13 @@
 import xlsxwriter # pip install xlsxwriter
 
 DATA = (
-    ["Water", 25],
-    ["Cola", 37],
+    ("Water", 25),
+    ("Cola", 37),
     ["Butter", 85],
     ["Bread", 15],
 )
 
-with xlsxwriter.Workbook("sample.xlsx") as workbook:
+with xlsxwriter.Workbook("sample2.xlsx") as workbook:
     print(dir(workbook))
     worksheet = workbook.add_worksheet(name="Calculation")
 
